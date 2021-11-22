@@ -1,10 +1,6 @@
 import React from 'react';
 
 class Options extends React.Component {
-  constructor(props) {
-    super(props);
-  };
-
   render() {
     return (
       <div className="Options">
@@ -27,6 +23,14 @@ class Options extends React.Component {
           step="0.1"
           onChange={this.props.changeStrokeWidth}
         />
+
+        <label htmlFor="color">Color: {this.props.color}</label>
+        <input
+          type="color" 
+          value="#F7931A" 
+          onChange={this.props.changeColor}
+        />
+        
       </div>
     )
   }

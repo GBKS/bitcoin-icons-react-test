@@ -11,22 +11,26 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      size: 24,
+      color: '#000000',
+      size: 48,
       strokeWidth: 1
     };
 
     this.changeSizeBind = this.changeSize.bind(this);
     this.changeStrokeWidthBind = this.changeStrokeWidth.bind(this);
+    this.changeColorBind = this.changeColor.bind(this);
   }
 
   changeSize(event) {
-    console.log('p.changeSize', event, event.target.value)
-
     this.setState({size: event.target.value})
   }
 
   changeStrokeWidth(event) {
     this.setState({strokeWidth: event.target.value})
+  }
+
+  changeColor(event) {
+    this.setState({color: event.target.value})
   }
 
   render() {
@@ -37,15 +41,18 @@ class App extends React.Component {
           strokeWidth={this.state.strokeWidth} 
           changeSize={this.changeSizeBind} 
           changeStrokeWidth={this.changeStrokeWidthBind} 
+          changeColor={this.changeColorBind} 
         />
         <div class="wrap">
           <OutlineIcons
             size={this.state.size}
             strokeWidth={this.state.strokeWidth}
+            color={this.state.color}
           />
           <FilledIcons
             size={this.state.size}
             strokeWidth={this.state.strokeWidth}
+            color={this.state.color}
           />
         </div>
       </div>

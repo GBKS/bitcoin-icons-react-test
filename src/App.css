@@ -4,10 +4,14 @@
 }
 
 .App .wrap {
-  flex-basis:  100px;
+  display: flex;
+  flex-basis:  1600px;
   flex-shrink: 1;
   flex-grow: 1;
-  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  gap: 40px;
 }
 
 .Options {
@@ -38,5 +42,32 @@
 }
 
 .FilledIcons {
+
+}
+
+h2 {
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+
+h3 {
+  margin: 0 0 20px 0;
+  width: 100%;
+  text-align: left;
+}
+
+hr {
   margin-top: 20px;
+  margin-bottom: 20px;
+  height: 1px;
+  border-width: 0;
+  background-color: #dedede;
+}
+
+.OutlineIcons,
+.FilledIcons {
+  text-align: left;
+  flex-grow: 1;
+  flex-basis: 30%;
 }
