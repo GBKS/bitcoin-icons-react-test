@@ -9,7 +9,7 @@ class Options extends React.Component {
           name="size"
           type="range"
           min="10"
-          max="100"
+          max="1000"
           step="1"
           onChange={this.props.changeSize}
         />
