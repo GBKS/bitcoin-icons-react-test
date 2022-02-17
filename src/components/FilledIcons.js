@@ -16,6 +16,14 @@ class FilledIcons extends React.Component {
     return (
       <div className="FilledIcons">
         <h2>Filled icons</h2>
+
+        <hr />
+        <h3>V 0.1.9</h3>
+        <Icons.SignIcon style={this.iconStyle()} />
+        <Icons.VerifyIcon style={this.iconStyle()} />
+        <Icons.SatoshiV3Icon style={this.iconStyle()} />
+        <Icons.SatoshiV2Icon style={this.iconStyle()} />
+        <Icons.FileIcon style={this.iconStyle()} />
         
         <hr />
         <h3>V 0.1.8</h3>
